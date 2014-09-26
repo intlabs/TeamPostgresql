@@ -24,5 +24,6 @@ RUN apt-get install -y curl wget
 RUN apt-get install -y zip
 RUN curl -s https://raw.githubusercontent.com/intlabs/Useful-Scripts/master/TeamPostgresql-installer.sh | bash
 ADD start.sh /
+RUN chmod +x /start.sh
 
-ENTRYPOINT ["start.sh"]
+ENTRYPOINT ["/start.sh"]
