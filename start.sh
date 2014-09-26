@@ -16,3 +16,5 @@
 #
 
 java -cp /teampostgresql/webapp/WEB-INF/lib/log4j-1.2.17.jar-1.0.jar:webapp/WEB-INF/classes:webapp/WEB-INF/lib/* dbexplorer.TeamPostgreSQL 8082
+
+bash
