@@ -1,7 +1,7 @@
 #
 # TeamPostgresql installer
 #
-# https://github.com/cannycomputing/cannyos-application-ubuntu-opengovernment
+# https://github.com/intlabs/TeamPostgresql
 #
 # Copyright 2014 Pete Birley
 #
