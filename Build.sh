@@ -20,7 +20,7 @@
 #
 
 # Build base container image
-sudo docker build -t="intlabs/TeamPostgresql" github.com/intlabs/TeamPostgresql
+sudo docker build -t="intlabs/teampostgresql" github.com/intlabs/TeamPostgresql
 
 echo ""
 echo "*****************************************************"
@@ -31,9 +31,9 @@ echo "*****************************************************"
 echo ""
 
 # Make shared directory on host
-sudo mkdir -p "/CannyOS/build/TeamPostgresql"
+sudo mkdir -p "/CannyOS/build/teampostgresql"
 # Ensure that there it is clear
-sudo rm -r -f "/CannyOS/build/TeamPostgresql/*"
+sudo rm -r -f "/CannyOS/build/teampostgresql/*"
 
 # Remove any existing containers
 sudo docker stop connectedgovernment-postgres
@@ -41,9 +41,9 @@ sudo docker rm connectedgovernment-postgres
 
 # Launch built base container image
 sudo docker run -i -t -d \
- --volume "/CannyOS/build/TeamPostgresql":"/CannyOS/Host" \
- --name "TeamPostgresql" \
- --hostname "TeamPostgresql" \
+ --volume "/CannyOS/build/teamPostgresql":"/CannyOS/Host" \
+ --name "teampostgresql" \
+ --hostname "teampostgresql" \
  --user "root" \
  -p 8082:8082\
- intlabs/TeamPostgresql 
+ intlabs/teamPostgresql 
