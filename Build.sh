@@ -41,6 +41,7 @@ sudo docker rm connectedgovernment-postgres
 
 # Launch built base container image
 sudo docker run -i -t -d \
+ --privileged=true --lxc-conf="native.cgroup.devices.allow = c 10:229 rwm" \
  --volume "/CannyOS/build/teampostgresql":"/CannyOS/Host" \
  --name "teampostgresql" \
  --hostname "teampostgresql" \
