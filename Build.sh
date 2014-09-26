@@ -47,4 +47,4 @@ sudo docker run -i -t -d \
  --hostname "teampostgresql" \
  --user "root" \
  -p 8082:8082\
- intlabs/teamPostgresql 
+ intlabs/teampostgresql 
