@@ -41,7 +41,7 @@ sudo docker rm connectedgovernment-postgres
 
 # Launch built base container image
 sudo docker run -i -t -d \
- --volume "/CannyOS/build/teamPostgresql":"/CannyOS/Host" \
+ --volume "/CannyOS/build/teampostgresql":"/CannyOS/Host" \
  --name "teampostgresql" \
  --hostname "teampostgresql" \
  --user "root" \

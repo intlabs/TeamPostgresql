@@ -19,6 +19,8 @@
 #
 
 FROM ubuntu
+RUN apt-get update
+RUN apt-get install -y curl
 RUN curl -s https://raw.githubusercontent.com/intlabs/Useful-Scripts/master/TeamPostgresql-installer.sh | bash
 
 CMD ["java -cp webapp/WEB-INF/lib/log4j-1.2.17.jar-1.0.jar:webapp/WEB-INF/classes:webapp/WEB-INF/lib/* dbexplorer.TeamPostgreSQL 8082"]
