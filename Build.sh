@@ -36,8 +36,8 @@ sudo mkdir -p "/CannyOS/build/teampostgresql"
 sudo rm -r -f "/CannyOS/build/teampostgresql/*"
 
 # Remove any existing containers
-sudo docker stop connectedgovernment-postgres
-sudo docker rm connectedgovernment-postgres
+sudo docker stop teampostgresql
+sudo docker rm teampostgresql
 
 # Launch built base container image
 sudo docker run -i -t -d \
